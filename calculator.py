@@ -3,7 +3,8 @@ Calculator Master
 Student: Gio Malcolm Ilas
 Section: BIT42
 """
-
+def add(a, b):
+    return a + b
 def show_menu():
     print("\n==============================")
     print("     GIO'S CALCULATOR MASTER")
