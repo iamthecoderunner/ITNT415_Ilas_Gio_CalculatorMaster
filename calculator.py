@@ -16,6 +16,8 @@ def get_number(prompt):
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
+def subtract(a, b):
+    return a - b
 
 def show_menu():
     print("\n==============================")
