@@ -7,7 +7,6 @@ Section: BIT42
 def add(a, b):
     return a + b
 
-
 def get_number(prompt):
     while True:
         value = input(prompt).strip()
@@ -21,6 +20,13 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a * b
+
+def divide(a, b):
+    if b == 0:
+        return None
+    return a / b  
+
+
 def show_menu():
     print("\n==============================")
     print("     GIO'S CALCULATOR MASTER")
