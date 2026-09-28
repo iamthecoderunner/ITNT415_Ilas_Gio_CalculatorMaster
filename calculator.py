@@ -67,8 +67,17 @@ def main():
             num2 = get_number("Enter second number: ")
             result = multiply(num1, num2)
             print(f"Result: {num1} * {num2} = {result}")
-        else:
-            print("This operation is not implemented yet.")
+
+        
+        elif choice == "D":
+            num1 = get_number("Enter first number: ")
+            num2 = get_number("Enter second number: ")
+            result = divide(num1, num2)
+
+            if result is None:
+                print("Error: Cannot divide by zero.")
+            else:
+                print(f"Result: {num1} / {num2} = {result}")
 
         
 
