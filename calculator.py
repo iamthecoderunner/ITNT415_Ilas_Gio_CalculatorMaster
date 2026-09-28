@@ -18,7 +18,9 @@ def get_number(prompt):
 
 def subtract(a, b):
     return a - b
-
+    
+def multiply(a, b):
+    return a * b
 def show_menu():
     print("\n==============================")
     print("     GIO'S CALCULATOR MASTER")
