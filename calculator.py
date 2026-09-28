@@ -7,7 +7,6 @@ Section: BIT42
 def add(a, b):
     return a + b
 
-
 def get_number(prompt):
     while True:
         value = input(prompt).strip()
@@ -21,6 +20,13 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a * b
+
+def divide(a, b):
+    if b == 0:
+        return None
+    return a / b  
+
+
 def show_menu():
     print("\n==============================")
     print("     GIO'S CALCULATOR MASTER")
@@ -61,8 +67,17 @@ def main():
             num2 = get_number("Enter second number: ")
             result = multiply(num1, num2)
             print(f"Result: {num1} * {num2} = {result}")
-        else:
-            print("This operation is not implemented yet.")
+
+        
+        elif choice == "D":
+            num1 = get_number("Enter first number: ")
+            num2 = get_number("Enter second number: ")
+            result = divide(num1, num2)
+
+            if result is None:
+                print("Error: Cannot divide by zero.")
+            else:
+                print(f"Result: {num1} / {num2} = {result}")
 
         
 
